@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 5,
+  "sessions": [
+    {
+      "number": 1,
+      "title": "Author or import the solution plan",
+      "status": "complete",
+      "startedAt": "2026-10-05T12:37:27.614000-04:00",
+      "completedAt": "2026-10-05T13:11:56.280000-04:00",
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5-20251001",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": "VERIFIED",
+      "verification": {
+        "rounds": 2,
+        "verifierModel": "gpt-5.6-luna",
+        "verifierProvider": "openai",
+        "transport": "api"
+      },
+      "frameworkVersion": "3.20.0"
+    },
+    {
+      "number": 2,
+      "title": "Challenge the plan, then break it into numbered sessions",
+      "status": "complete",
+      "startedAt": "2026-10-05T13:13:03.011000-04:00",
+      "completedAt": "2026-10-05T13:23:02.153000-04:00",
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": "VERIFIED",
+      "verification": {
+        "rounds": 2,
+        "verifierModel": "gpt-5.6-luna",
+        "verifierProvider": "openai",
+        "transport": "api"
+      },
+      "frameworkVersion": "3.20.0"
+    },
+    {
+      "number": 3,
+      "title": "Skeleton",
+      "status": "complete",
+      "startedAt": "2026-10-05T13:28:15.609000-04:00",
+      "completedAt": "2026-10-05T13:34:50.193000-04:00",
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": "VERIFIED",
+      "verification": {
+        "rounds": 2,
+        "verifierModel": "gpt-5.6-luna",
+        "verifierProvider": "openai",
+        "transport": "api"
+      },
+      "frameworkVersion": "3.20.0"
+    },
+    {
+      "number": 4,
+      "title": "Person Model",
+      "status": "complete",
+      "startedAt": "2026-10-05T13:40:19.016000-04:00",
+      "completedAt": "2026-10-05T13:42:46.792000-04:00",
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": "VERIFIED",
+      "verification": {
+        "rounds": 1,
+        "verifierModel": "gpt-5.6-luna",
+        "verifierProvider": "openai",
+        "transport": "api"
+      },
+      "frameworkVersion": "3.20.0"
+    },
+    {
+      "number": 5,
+      "title": "CSV Deserializer",
+      "status": "in-progress",
+      "startedAt": "2026-10-05T13:43:14.286000-04:00",
+      "completedAt": null,
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": null,
+      "frameworkVersion": "3.20.0"
+    },
+    {
+      "number": 6,
+      "title": "Database Layer",
+      "status": "not-started",
+      "startedAt": null,
+      "completedAt": null,
+      "orchestrator": null,
+      "verificationVerdict": null
+    },
+    {
+      "number": 7,
+      "title": "Console Application",
+      "status": "not-started",
+      "startedAt": null,
+      "completedAt": null,
+      "orchestrator": null,
+      "verificationVerdict": null
+    },
+    {
+      "number": 8,
+      "title": "Packaging",
+      "status": "not-started",
+      "startedAt": null,
+      "completedAt": null,
+      "orchestrator": null,
+      "verificationVerdict": null
+    },
+    {
+      "number": 9,
+      "title": "Release 1.0.0 (release: 1.0.0)",
+      "status": "not-started",
+      "startedAt": null,
+      "completedAt": null,
+      "orchestrator": null,
+      "verificationVerdict": null
+    }
+  ]
+}

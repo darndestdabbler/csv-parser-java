@@ -1,0 +1,8 @@
+# Dabbler router machine-side state: the run ledger records each
+# verification round after the tree it describes, so committing it
+# makes verified work look like it changed post-verification.
+.dabbler/
+
+# Maven's own output, which lands inside the module it built, and the shade plugin's reduced POM beside it.
+target/
+dependency-reduced-pom.xml
