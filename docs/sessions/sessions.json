@@ -88,9 +88,9 @@
     {
       "number": 5,
       "title": "CSV Deserializer",
-      "status": "in-progress",
+      "status": "complete",
       "startedAt": "2026-10-05T13:43:14.286000-04:00",
-      "completedAt": null,
+      "completedAt": "2026-10-05T13:46:29.706000-04:00",
       "orchestrator": {
         "engine": "claude-code",
         "provider": "anthropic",
