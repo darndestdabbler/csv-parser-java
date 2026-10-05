@@ -67,9 +67,9 @@
     {
       "number": 4,
       "title": "Person Model",
-      "status": "in-progress",
+      "status": "complete",
       "startedAt": "2026-10-05T13:40:19.016000-04:00",
-      "completedAt": null,
+      "completedAt": "2026-10-05T13:42:46.792000-04:00",
       "orchestrator": {
         "engine": "claude-code",
         "provider": "anthropic",
