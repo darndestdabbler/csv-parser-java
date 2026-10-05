@@ -8,6 +8,18 @@
 # the model registry in order to say how to run a test suite.
 schema_version: 1
 
+testing:
+  suites:
+    - name: maven
+      command: mvn test -DforkedProcessTimeoutInSeconds=120
+      expensive: true
+      covers: ['.']
+      test_roots:
+        - person-model/src/test/java
+        - csv-deserializer/src/test/java
+        - csv-database/src/test/java
+        - csv-parser-app/src/test/java
+
 # No suite is declared, because nothing at the root of this repository says
 # how its tests run. Setup reads what is there -- a pytest section, a
 # `scripts.test`, a POM, a solution -- and where none of it says how the

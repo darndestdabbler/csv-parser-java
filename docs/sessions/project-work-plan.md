@@ -14,6 +14,13 @@ The numbered sessions are declared from `session-plan.md`; each one's task is wh
 | ---: | --- | --- | --- |
 | 1 | Author or import the solution plan | no | 2026-10-05 |
 | 2 | Challenge the plan, then break it into numbered sessions | no | 2026-10-05 |
+| 3 | Skeleton | no | 2026-10-05 |
+| 4 | Person Model | — | not declared |
+| 5 | CSV Deserializer | — | not declared |
+| 6 | Database Layer | — | not declared |
+| 7 | Console Application | — | not declared |
+| 8 | Packaging | — | not declared |
+| 9 | Release 1.0.0 (release: 1.0.0) | — | not declared |
 
 ### Session 1 — Author or import the solution plan
 
@@ -32,3 +39,9 @@ Session 1 plans the CSV Parser Java Dabbler learning exercise. It gathers requir
 **Releasable: no.**
 
 Session 2 reviews and challenges the four-module solution plan, resolves the three deferred decisions, and records rationale in docs/planning/solution-plan.md; then appends numbered sessions 3 through 9 to docs/sessions/session-plan.md, covering the Maven skeleton, Person model, CSV deserializer, database layer, console application, packaging, and release 1.0.0.
+
+### Session 3 — Skeleton
+
+**Releasable: no.**
+
+Set up the Maven project skeleton for csv-parser-java: write a parent pom.xml (groupId=com.example, artifactId=csv-parser-java, version=1.0.0-SNAPSHOT, packaging=pom) that lists person-model, csv-deserializer, csv-database, and csv-parser-app as modules; write each module's pom.xml with the correct inter-module dependency entries at ${project.version} (person-model has none; csv-deserializer and csv-database each depend on person-model; csv-parser-app depends on all three), and include the ArchUnit dependency (com.tngtech.archunit:archunit-junit5) in csv-parser-app/pom.xml; write an ArchitectureTest.java in csv-parser-app asserting that no class outside com.example.csvparserapp depends on any class in com.example.csvdatabase; and declare the Maven testing suite in dabbler.yaml.
