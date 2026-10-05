@@ -13,7 +13,7 @@ The numbered sessions are declared from `session-plan.md`; each one's task is wh
 | # | Session | Releasable | Declared |
 | ---: | --- | --- | --- |
 | 1 | Author or import the solution plan | no | 2026-10-05 |
-| 2 | Challenge the plan, then break it into numbered sessions | — | not declared |
+| 2 | Challenge the plan, then break it into numbered sessions | no | 2026-10-05 |
 
 ### Session 1 — Author or import the solution plan
 
@@ -26,3 +26,9 @@ Session 1 plans the CSV Parser Java Dabbler learning exercise. It gathers requir
 - 2026-10-05 — step 'write-brief': its checks: Use git ls-files for cross-platform file existence check instead of POSIX test command (claude-code (anthropic, claude-haiku-4-5-20251001))
 - 2026-10-05 — step 'write-solution-plan': its checks: Use git ls-files for cross-platform file existence check (claude-code (anthropic, claude-haiku-4-5-20251001))
 - 2026-10-05 — step 'verify-planning-docs': its checks: Use git ls-files for cross-platform file existence check (claude-code (anthropic, claude-haiku-4-5-20251001))
+
+### Session 2 — Challenge the plan, then break it into numbered sessions
+
+**Releasable: no.**
+
+Session 2 reviews and challenges the four-module solution plan, resolves the three deferred decisions, and records rationale in docs/planning/solution-plan.md; then appends numbered sessions 3 through 9 to docs/sessions/session-plan.md, covering the Maven skeleton, Person model, CSV deserializer, database layer, console application, packaging, and release 1.0.0.
