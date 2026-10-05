@@ -16,7 +16,7 @@ The numbered sessions are declared from `session-plan.md`; each one's task is wh
 | 2 | Challenge the plan, then break it into numbered sessions | no | 2026-10-05 |
 | 3 | Skeleton | no | 2026-10-05 |
 | 4 | Person Model | no | 2026-10-05 |
-| 5 | CSV Deserializer | — | not declared |
+| 5 | CSV Deserializer | no | 2026-10-05 |
 | 6 | Database Layer | — | not declared |
 | 7 | Console Application | — | not declared |
 | 8 | Packaging | — | not declared |
@@ -51,3 +51,9 @@ Set up the Maven project skeleton for csv-parser-java: write a parent pom.xml (g
 **Releasable: no.**
 
 Create the Person model class and its tests for the person-model Maven module. Person.java will have String name, String email, and int age fields, an all-args constructor, a getter for each field, equals/hashCode, toString, and implements Serializable. PersonTest.java will test the constructor, all getters, the equals/hashCode contract, and the toString format.
+
+### Session 5 — CSV Deserializer
+
+**Releasable: no.**
+
+Add the OpenCSV dependency to csv-deserializer/pom.xml and implement CsvDeserializer.java with a deserialize(Path folder) method that reads every .csv file in the given folder, maps each data record to a Person by column header (case-insensitive: name, email, age), and skips records with a missing column or non-integer age while logging each skip at WARN level. Then write CsvDeserializerTest.java with two tests using real temp-directory CSV fixtures: one asserting a well-formed file returns the expected List<Person>, and one asserting a file with a malformed record returns a partial list without throwing.

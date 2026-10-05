@@ -53,6 +53,13 @@
       "dateTime": "2026-10-05T13:41:20.256000-04:00",
       "task": "Create the Person model class and its tests for the person-model Maven module. Person.java will have String name, String email, and int age fields, an all-args constructor, a getter for each field, equals/hashCode, toString, and implements Serializable. PersonTest.java will test the constructor, all getters, the equals/hashCode contract, and the toString format.",
       "releasable": false
+    },
+    {
+      "kind": "task-declaration",
+      "sessionNumber": 5,
+      "dateTime": "2026-10-05T13:44:00.795000-04:00",
+      "task": "Add the OpenCSV dependency to csv-deserializer/pom.xml and implement CsvDeserializer.java with a deserialize(Path folder) method that reads every .csv file in the given folder, maps each data record to a Person by column header (case-insensitive: name, email, age), and skips records with a missing column or non-integer age while logging each skip at WARN level. Then write CsvDeserializerTest.java with two tests using real temp-directory CSV fixtures: one asserting a well-formed file returns the expected List<Person>, and one asserting a file with a malformed record returns a partial list without throwing.",
+      "releasable": false
     }
   ]
 }
