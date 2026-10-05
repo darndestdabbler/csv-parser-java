@@ -1,0 +1,5 @@
+{
+  "dabbler.engine": "claude-code",
+  "dabbler.authoringModel": "claude-sonnet-4-6",
+  "dabbler.reviewerModel": "gpt-5.6-luna"
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 5,
+  "sessions": [
+    {
+      "number": 1,
+      "title": "Author or import the solution plan",
+      "status": "complete",
+      "startedAt": "2026-10-05T12:37:27.614000-04:00",
+      "completedAt": "2026-10-05T13:11:56.280000-04:00",
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5-20251001",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": "VERIFIED",
+      "verification": {
+        "rounds": 2,
+        "verifierModel": "gpt-5.6-luna",
+        "verifierProvider": "openai",
+        "transport": "api"
+      },
+      "frameworkVersion": "3.20.0"
+    },
+    {
+      "number": 2,
+      "title": "Challenge the plan, then break it into numbered sessions",
+      "status": "in-progress",
+      "startedAt": "2026-10-05T13:13:03.011000-04:00",
+      "completedAt": null,
+      "orchestrator": {
+        "engine": "claude-code",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "identityProvenance": "direct"
+      },
+      "verificationVerdict": null,
+      "frameworkVersion": "3.20.0"
+    }
+  ]
+}
